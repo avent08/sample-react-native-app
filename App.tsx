@@ -1,35 +1,25 @@
+/*ROUTING*/
+import 'react-native-gesture-handler';
+/*CORE*/
 import React from 'react';
-import appboxosdk from '@appboxo/react-native-sdk';
-import { StyleSheet, View, Button } from 'react-native';
+/*LIBS*/
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
+/*PAGES*/
+import Home from './pages/Home';
+import FirstScreen from './pages/FirstScreen';
+import SecondScreen from './pages/SecondScreen';
+
+const Stack = createStackNavigator();
 
 export default function App() {
-
-  React.useEffect(() => {
-    appboxosdk.setConfig('[client_id]');  //set your Appboxo client_id
-  }, [])
-
-  const onLoadMiniApp = () => {
-    appboxosdk.openMiniApp('[miniapp_id]', '[auth_payload]');  //launch miniapp by id with auth payload
-  }
-
   return (
-    <View style={styles.container}>
-      <Button
-        color="#841584"
-        title="Load miniapp"
-        onPress={onLoadMiniApp}
-        accessibilityLabel="Load miniapp"
-      />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={Home} options={{title: 'Home'}} />
+        <Stack.Screen name="FirstScreen" component={FirstScreen} />
+        <Stack.Screen name="SecondScreen" component={SecondScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-  },
-});
-
