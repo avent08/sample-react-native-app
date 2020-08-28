@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@appboxo/react-native-sdk@1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@appboxo/react-native-sdk/-/react-native-sdk-1.0.8.tgz#a3ceea10fdb333dd2e06d97af8164969cd85878c"
-  integrity sha512-FcqK/yRVjow+teAVINvE06up5w8aoFSWXnkQHs9j3LCbvLobiQ42N2QkwpQJ+M9t53nBqSd0VZoFV2pLYeEmLw==
+"@appboxo/react-native-sdk@1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@appboxo/react-native-sdk/-/react-native-sdk-1.0.9.tgz#7781019c7f55b76dd05e8bed1fee3c27b1ca672b"
+  integrity sha512-+AQ29biMN4yT13srrd2Hr6exQF0duBwJFCwhDDjDC8iyL1vVMxKK/ZgRJ1K73dXy4KyGuyE0vdId5yuiMx++Ew==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4":
   version "7.10.4"
